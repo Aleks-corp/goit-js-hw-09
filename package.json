@@ -1,0 +1,28 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "homepage": "https://aleks-corp.github.io/goit-js-hw-09",
+  "scripts": {
+    "start": "parcel src/*.html",
+    "watch": "parcel watch",
+    "build": "parcel build src/*.html",
+    "bros": "npx parcel --open chrome --port 5000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aleks-corp/goit-js-hw-09.git"
+  },
+  "author": "Aleks Haran",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.0",
+    "parcel": "^2.7.0",
+    "parcel-reporter-clean-dist": "^1.0.4",
+    "posthtml-include": "^1.7.4",
+    "sass": "^1.54.6"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead"
+}
