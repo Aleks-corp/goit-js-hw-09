@@ -34,7 +34,7 @@ const timer = {
     this.TimerId = setInterval(() => {
       const currentTime = Date.now();
       if (timeTo > currentTime) {
-        updateDomTimerContainer();
+        updateDomTimerContainer(currentTime);
       } else {
         clearInterval(this.TimerId);
         this.TimerId = null;
@@ -57,7 +57,7 @@ function onInput(evt) {
   refs.inputField.disabled = true;
 }
 
-function updateDomTimerContainer() {
+function updateDomTimerContainer(currentTime) {
   const { days, hours, minutes, seconds } = convertMs(timeTo - currentTime);
   refs.timerContainerDays.textContent = days;
   refs.timerContainerHours.textContent = hours;
